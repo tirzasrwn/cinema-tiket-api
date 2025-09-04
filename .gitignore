@@ -20,6 +20,7 @@
 # Go workspace file
 go.work
 
+.env
 .postgres
 todo.md
 docs.go
