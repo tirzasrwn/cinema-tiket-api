@@ -20,6 +20,10 @@ Made by [Tirza Sarwono](https://www.linkedin.com/in/tirzasrwn/)
 - PostgreSQL
 - Docker & Docker Compose
 
+## Flowchart
+
+![flowchart](./docs/flowchart.png)
+
 ## Entity Relationship Diagram (ERD)
 
 ![cinema-ticket-erd](./docs/cinema-erd.png)
