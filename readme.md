@@ -9,7 +9,7 @@ A Cinema Ticket Booking API for case study using Go, Gin, Swaggo, and PostgreSQL
 
 ## Personal
 
-Made by [Tirza Sarwono](https://www.linkedin.com/in/tirzasrwn/)
+Made by [Tirza Sarwono](https://www.linkedin.com/in/tirzasrwn/).
 
 ## Stack
 
@@ -79,7 +79,7 @@ This API documentation uses Swagger. Here are the main routes:
 
 Swagger API documentation can be found at [http://localhost:4000/swagger/index.html](http://localhost:4000/swagger/index.html).
 
-Postman Collection is available in the [`./docs/`](./docs/Cinema-Ticket-API.postman_collection.json) directory.
+Postman Collection is available in the [`./docs/`](./docs/postman_collection.json) directory.
 
 ### Feature and Route Correlations
 
@@ -119,7 +119,7 @@ Postman Collection is available in the [`./docs/`](./docs/Cinema-Ticket-API.post
 
 ## Database Migration
 
-Database migrations are automatically applied when starting with Docker Compose.
+Database migrations are automatically applied when starting with Docker Compose. SQL script is in [init_tables.sql](./database/migrations/init_tables.sql) .
 
 ## Answer for point A
 
