@@ -1,0 +1,11 @@
+build
+.git
+.gitignore
+docs
+migration
+db
+.dockerignore
+Dockerfile
+docker-compose.yml
+Makefile
+*.md

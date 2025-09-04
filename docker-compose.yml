@@ -1,0 +1,35 @@
+version: "3"
+name: "cinema-ticket-api"
+services:
+  postgres:
+    container_name: cinema-ticket-api-postgres
+    hostname: cinema-ticket-api-postgres
+    image: cinema-ticket-api-postgres:v0.0.1
+    build:
+      context: ./database/
+      dockerfile: Dockerfile
+    ports:
+      - "5432:5432"
+    restart: always
+    deploy:
+      mode: replicated
+      replicas: 1
+    volumes:
+      - ./db/data/.postgres/:/var/lib/postgresql/data
+  backend:
+    container_name: cinema-ticket-api-backend
+    hostname: cinema-ticket-api-backend
+    image: cinema-ticket-api-backend:v0.0.1
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "4000:4000"
+    deploy:
+      mode: replicated
+      replicas: 1
+networks:
+  default:
+    name: cinema-ticket-api
+    driver: bridge
