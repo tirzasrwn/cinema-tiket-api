@@ -40,3 +40,9 @@ down:
 	docker compose down
 up:
 	docker compose up --build -d
+
+test:
+	@rm -f coverage.out coverage.html
+	go test -v -coverprofile=coverage.out ./...
+	go tool cover -html=coverage.out -o ./coverage.html
+	@open "file://$(PWD)/coverage.html"
