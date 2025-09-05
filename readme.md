@@ -20,6 +20,26 @@ Made by [Tirza Sarwono](https://www.linkedin.com/in/tirzasrwn/).
 - PostgreSQL
 - Docker & Docker Compose
 
+## System Design
+
+![system-design](./docs/system-design.png)
+
+## Detailed Component Breakdown
+
+![detailed-component-breakdown](./docs/detailed-component-breakdown.png)
+
+## Sequence Diagram
+
+![sequence-diagram](./docs/sequence-diagram.png)
+
+## Scalability Feature
+
+![scalability-feature](./docs/scalability-feature.png)
+
+## Security Layer
+
+![security-layer](./docs/security-layer.png)
+
 ## Flowchart
 
 ![flowchart](./docs/flowchart.png)
@@ -128,8 +148,6 @@ Database migrations are automatically applied when starting with Docker Compose.
 Sistem pembelian tiket bioskop online ini dirancang untuk memberikan pengalaman yang mudah dan aman bagi pengguna. Alur utama dimulai saat pelanggan mencari jadwal film, di mana mereka dapat memilih kota, bioskop, serta tanggal dan waktu tayang yang diinginkan. Setelah menemukan film yang cocok, mereka akan masuk ke tahap pemilihan kursi. Sistem akan menampilkan tata letak kursi teater secara visual, dan pelanggan dapat memilih kursi yang masih kosong. Setelah memilih kursi, pelanggan melanjutkan ke proses pembayaran, di mana mereka dapat memilih berbagai metode pembayaran yang tersedia. Setelah pembayaran diverifikasi, sistem akan mengirimkan konfirmasi dan e-ticket melalui email atau SMS. Proses ini dirancang agar sederhana dan intuitif, bahkan bagi orang yang tidak terbiasa dengan teknologi.
 
 ### Solusi Teknis: Pemilihan Kursi, Restok, dan Refund
-
-Untuk memastikan performa tinggi dan integritas data, sistem ini menggunakan arsitektur yang kuat.
 
 #### Sistem Pemilihan Tempat Duduk
 
